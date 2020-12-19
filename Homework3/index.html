@@ -7,13 +7,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    
+    <div class="container"></div>
+        <section class="registration">
+            <span class="region">
+                Ваш регион: <a href="#"> Москва</a>
+            </span>
+            <span class="cabinet">
+                <a class="hidden" href="#" >Войти</a>
+                <a href="#">Личный кабинет</a>
+            </span>
+        </section>
+        <section class="contacts">
+            <div class="contacts__homy">
+                <svg class="contacts__lable" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="46" viewBox="0 0 161 101">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          mix-blend-mode: lighten;
+                        }
+                      </style>
+                    </defs>
+                    <image class="cls-1" width="161" height="101" xlink:href="data:img/png;base64,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"/>
+                  </svg>
+                <img src=".\images\HOMyRU.png" alt="HOMYRU">
+               <p class="hidden">Оборудование и решения для VoIP</p>
+            </div>
+            <div class="contacts__search">
+                <img src=".\images\search.svg" alt="search">
+            </div>
+            <div class="contacts__basket">
+                <p>10</p>
+                <img src=".\images\basket.svg" alt="search">
+            </div>
+            <div class="contacts__feedback">
+                <span class="feedback-number big-font"><b>+7 495 2-55-44-66</b></span>
+                <span class="feedback-days">(пн-пт с 9 до 18 ч)</span>
+                <span class="feedback-not-number">
+                    <a href="mailto:info@homy.ru">info@homy.ru</a>
+                </span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="18" viewBox="0 0 16 18">
+                        <image class="feedback-viber" width="16" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAADtUlEQVQ4jVVTW2wUZRg9/z/Xndndad3u0gttKVDoJS1YTTFVoEi0Bho1QHwxITEmmEjiA8/GFx70zRcf1RhD4gtGY4xAMFwSL7UpLJD0QgtL67bbZXfb3dnL7M7OzD/mHxKjXzIP/+Q7X853zvnIdraM3HoR1y7NRTv7YhO5te3Xy6XGmG01OzyXhQgBo5TUtKiajbRq92Kd0Rtri09/GzvWbw6M90AkBHBsd7hWanwxe3VpkjEfokQhihREoAAI7IYLq2IOFTbMV1cXnl7QIspd1/XOE4IZapXt1l+/S36ZSxcn9aiC3oEE5JCEhuUg0WXg5elhjL8xiK7+OERJABUIqkVrLHlj5Zt6tdkuHH/+9Jm7N5c/Mtp0nHjvJbx5bgL1mo2V5Dp8HxBlAVpExe7hdiiajMJ6CVSkKG9bbaqmpOjqQvYkAUHHrhjGpwYCwOTpgxg6tAulfBUgBCFdRmGzjO7+OLr37wCYD0GgeDKfmaJmvjrIQeVtC2a+Bl6SIiDebaBpuyhv1WDXHeiRECpFCz0DCUiKCEIJqmajn9p1x+CCFTIm/rqyGAx4eCeN2atLMGI6VuezSC/nUdqqolF3oEVVqBEVhBB4tqeLjDGJUArfdZG8vYxDJwYQjmpwHQbAh26oWFvMIpPKw2gLg7keKCUBA59vcnTwrQsAovxnuVSHXWvilbdHArXn/3wS0BdECp8B+Q0TZq4Kt+nB53bLYkE4fuDUB67jxfhE7vlmaiuwkQupRRQUc1W88Np+HDl1AKJAkV4pcF15K1RNTotGIrySeby1T5IFSBKFbTv45esZOLaDY++MYfTwHuhGCEpIQt9QO8ItGuauL/HwwYjra3TPSOeP/MFH+gBkRQLzfFz7dg6XPr0euMPBvCKtGhI9LUGf03Sxsz/+k3Du7Pm/rYp9dCtb2cmTxunxKHMBM6kCHs6lkUsXQQUaiHn7+/soZivo3peY7dob+4Q8+P0xamZj6Nble59tb1amJVUgPFiMMXiuj2fs/EAP/mYe8+PdLT9MTA99rEWURVFRZfi+v9CaCL8/+GLvuzNXFj5nzOPpK6pxNUmC0JGaKAuZUFi9byTCs1a5ntKjaoGLzXMASZEwdXY8b+ari7cuJ7Gj97mN3aMdHz56kPlDUUTIssRCUcXRI6oVNlTPKtc5k2dWSqoY7M1dqFtNQ9EU7B3tvOhT/Mw8xvhB+b4fNPNT599/S3Qdj6/I9+M2mCOH+y4eOXPwKw7hV5i8uQxZFv8H+rcA/AMz6K8ybxLLPgAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                        <image width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADYElEQVQ4jTVTW2hcVRRd55x7J5ObzNx5dJo20hQrxmk0ja2TlDZGTGkoJZR+GBQU4wsRRT+KnxXBL6Ug6EcRPwTRD3/8CT7Ij1VLfURSTU3rMKZpnDZNm8wj87hzn+ch94obDpvNPmutvffZhxQbJTSDFq5uF+EQh9R54z4GMl2TzamO7AwopdBDu9czLHsBUF8bJP53HN1yOLUfST0JDQAoKIQShiOdl8v+rbM2nBwFAyU0TKMjnOE7onrSIPG39ul739VJ7DwBsSKsTjToRItf99fOXbQWPtj0q7mAC0ARSCGjA0mgSQpHuOZl+8/3bvjlD3UaM0Ise+rM06Ror5z5rnHxrKmZmMxMRMoVrxapSwWEbQjIiJSBYVNUDqZYUsQQ+5Ede20qP1eZ/8yTfvz0zpN4Ze9z2KXvxKXtBbjSi0iUkpBQkY9iqbDmlEdzWuYretevPHnXr5opLYVHUiMAAR4yh5A3BuFxH4HkCKQAFyLygeBgiqLFLWPdu/OCtmwVT4RlhZcd4f83NG6j49ngUoIRAQIChYg78qExxVDqrE7SLbe+JwYdVa+OpcZylFxu/IUr7WuQikOEqpLDFwF8GYBLDi44pFRo+K0sDWRAwiDscW5jHov1JRzJFXAsN4FO4MIKbDjcgyd82IELO3AQKA4eEitB2PBLo880g1Z/jMRQ8WsoW+soZEYwvXsK7cBCsb2KtG7i1XufR39XH8rOBlzhRpUZ1LjFTr/+xP3XrJWjsXAfqI7Vzj9Ys27iQTOP6d3HcSC5H2PpQzix63EcyRYw0HUPLlV/w6ZXw8OJoTl6NF34IkF7Gg53IYRAr5bAD9Vf8ebSO5jfuIB8YhATucP439p+G023He6EnMyOf0pK1RX9/esff/J9/ednE1oifPRo3M2gjTiN40Aij8OZg+jv7sOWU8WXt79Byb6B2YGZj2b3zLyh3bQ39LrfTIWTtrkT/gAwytDDeuBJDz/VL2Oh/ge6aCxcZVjSxni68O2jmbG3FZSgNX9739VW6ZTJzK1+vW+BgrVbvgWXexFZr2aAUoqWsKExTU1lJ86PJkde5IpXpZLQkqzXOrXj+Iwt7d89GWw/lhobvNIuzt72Nsct0cmFrac0szZk9P0ynHjg8x16erHFO14IBoB/Af+zxgnR3eVsAAAAAElFTkSuQmCC"/>
+                    </svg>                      
+                    +7 911 111-11-11
+                </span>
+                <span class="feedback-not-number">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                        <image width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADQElEQVQ4jVWSW2hcVRSGv73PZS6ZzCRWkzBpk9hUjbGmqKkXitXWoEXFUhrwxdgHK/VBEQTFh1p8EPEhVUFfxAcRlIqF4AVpmkIpCo0QS5rUQK2m2k6SSSZDOjOZnLmcc/aWc0YFF6yXzdrf/+9/bZHXmlVPmZ/M1w6fulYdKVb9zlTUzA73mF9frZvzl0rSfiqtlztsfaU3IXN9SRvtK242XHwUIqOUeXhy/cTp6/4whgApQGvwNWGJRqdsnRtKW1+90h8b3dZkZGLUG4B3fq+8fPSXykfYonFBBa1piQrScYEBLFc1qxs6PO9olgsf3B87dKCNsyV8RN/EjQuXC/reUF1BewTe7rc5uDnCLREZMgt1n++yLkfnamRKmlRMFMceiey5p8Wclvmq39awDZbQfL4zyku9cWpKc/yyw/u/OaGp57tjjD0YJxGFYkWnXpt2Py0qyzTTTeaf+arajBDcmjR4oiNCQHvxgsP4Hy6Bs5NLHj892szgTQZtUUnZ1czk/fu+XaoNGSNvHoucX/GeDgCG0LzQYxMzJDtSklhM4BowU/A5k3P58rrLxaJCB459SFqiKqWgEbeEnKN59aLDjbri7pTF8R1NTD2W5Mq+JM912WQchfIbWQfpzhbV7bICTfxbhuCL+Tp3TRR5/VKZ0ys1FhxFV9zkyNYYU3sTDG4yQvVANiq0kO2W/CvctdJ0xQVju+Ps77QYna2z70eHOydKHPy5FLpK2SaHuq1wNgC0RuSqHGwzJxMRsY4HO1slBzpjfDgQZ6DdABfKDowteORqiv+VFFzb8Pvk9riRfTxtfhMQz654zBRcIobkh11NvDVg8cZ2i/N7EtzRbFJXihMZN8wr6Ktl1SkWtSZb8dP7z61PLhZU19YWyehAlGfSFoYIJoP3aabWXI7NVRnPKjAbGSQslsSa1iSAU2vuA0cmN04ul9SWYKA3KemJC0whyNY0c0WF7wHmP1++rnn2NuuzEBDolIHZstv98a/VdycWvWGvjo3QBP8jDM2U4erCpbuavk1y7vvdzXv/A+QARylKvmSu4PVP5+sPn8v6fUuOMp/cYnrTOX/XWsVLW4YoPdRmjo9si7w31Grn/gY+M2sLmZ+m7gAAAABJRU5ErkJggg=="/>
+                      </svg>
+                    skype-on.06
+                </span>
+            </div>
+        </section>
+    </div>
+
 
 
     <script src="js/main.js"></script>
