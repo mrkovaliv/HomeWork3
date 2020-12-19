@@ -1,4 +1,210 @@
 body {
+    min-width: 320px;
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+}
+a {
+    text-decoration: none;
+    
+}
+.header {
+    background-color: #040d0d;
+    color: #bcc3c5;
+    font-size: 13px;
+    line-height: 20px;
+}
+.menu {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.menu__burgger{
+    display: none;
+}
+.menu__burgger.active-burgger{
+    display: flex;
+    align-items: center;
+}
+
+.menu__burgger-btn {
+    width: 32px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.menu__burgger-btn:hover div {
+    background-color: #fff;
+}
+.menu__burgger-btn div {
+    height: 3px;
+    background-color: #ff6837;
+}
+.menu__burgger-btn div+div {
+    margin-top: 3px;
+}
+.menu__close-btn {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    border: 1px dashed #ff6837;
+    background-color: #040d0d;
+    color: #bcc3c5;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    outline: none;
+    z-index: 2;
+    cursor: pointer;
+    display: none;
+}
+.menu__close-btn.active-close{
+    display: block;
+}
+.menu-list__link:hover,
+.catalog-list__link:hover,
+.company-list__link:hover,
+.menu__close-btn:hover {
+    color: #ff5816;
+}
+
+.menu-list__item.menu-list__catalog,
+.menu-list__item.menu-list__company {
+    position: relative;
+}
+.menu-list__item {
+    padding: 5px 0;
+    border-bottom: 1px dashed #bcc3c5;
+}
+.menu-list__company::after {
+    left: 80px;
+}
+.menu-list__catalog::after {
+    left: 55px;
+}
+.menu-list__company::after,
+.menu-list__catalog::after {
+    content: "";
+    position: absolute;
+    background-image: url('../images/select-mark.svg');
+    height: 8px;
+    width: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu-list__link {
+    color: #bcc3c5;
+    font-size: 13px;
+    line-height: 20px;
+}
+.menu-list {
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px 5px 5px 5px;
+    display: none;
+}
+.menu-list.menu-list--active{
+    display: block;
+    
+}
+
+.catalog-list,
+.company-list{
+    display: none;
+}
+.catalog-list.select-active,
+.company-list.select-active{
+    display: block;
+}
+.catalog-list,
+.company-list {
+    position: absolute;
+    top: 30px;
+    min-width: 100%;
+    left: 0;
+    padding: 5px;
+    background-color: #dbdee6;
+    z-index: 2;
+}
+.catalog-list__item,
+.company-list__item {
+    border-bottom: 1px dashed #323232;
+
+}
+.catalog-list__item+.catalog-list__item,
+.company-list__item+.company-list__item {
+    padding-top: 5px;
+
+}
+.catalog-list__link,
+.company-list__link {
+    color: #323232;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+@media (min-width: 750px) {
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+}
+@media (min-width: 980px) {
+    .container {
+        max-width: 940px;
+    }
+
+}
+
+@media (min-width: 1140px) {
+    .container {
+        max-width: 1140px;
+    }
+    .menu__close-btn,
+    .menu__burgger,
+    .menu__burgger.active-burgger,
+    .menu__close-btn.active-close{
+        display: none;
+    } 
+    .menu {
+        justify-content: start;
+    }
+    .menu-list,
+    .menu-list.menu-list--active{
+        display: flex;
+        min-height: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .menu-list__item {
+        border-right: 1px dashed #323232;
+        padding: 0;
+        border-bottom: none;
+    }
+    .menu-list__item + .menu-list__item {
+        padding: 0 25px;
+    }
+    .catalog-list__link,
+    .company-list__link {
+        color: #323232;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .menu-list__item:last-child {
+        border: none;
+        padding-right: 0;
+    }
+    .menu-list__item.menu-list__catalog,
+    .menu-list__item.menu-list__company {
+        padding-right: 43px;
+    }
+    .menu-list__company::after,
+    .menu-list__catalog::after {
+        left: auto;
+        right: 25px;  
+    }
+    
 }
