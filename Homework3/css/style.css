@@ -64,13 +64,20 @@ a {
     font-size: 10px;
     margin: 10px;
     margin-right: 0;
+    align-items:baseline;
 }
-.contacts__basket p{
+.basket__hidden{
+    display: none;
+}
+.basket__p320{
     width: 70%;
     margin-left: 40%;
     background-color: #d9dde6;
     border-radius: 15px;
     text-align: center;
+}
+.basket__lable{
+    display: none;
 }
 .contacts__feedback{
     display: flex;
@@ -113,10 +120,25 @@ a {
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
+        align-items: center;
     }
     .contacts__homy{
         flex-grow: 0;
         order: -2;
+    }
+    .contacts__search{
+        align-self: center;
+    }
+    .contacts__basket{
+        width:30%;
+        display: flex;
+        align-self: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+    }
+    .contacts__basket *{
+        margin-top: 10px;
     }
     .contacts .hidden{
         margin-top: 10px;
@@ -138,18 +160,55 @@ a {
         text-align: end;
     }
     .contacts__feedback{
-        width: auto;
+        width:30%;
         order: -1;
         display: flex;
         flex-direction: column;
     }
-    .feedback-not-number{
-        align-self: flex-start;
+    .feedback-number{
+        align-self: flex-end;
         text-align: end;
     }
     .feedback-not-number{
-        align-self: flex-start;
+        align-self: flex-end;
         text-align: end;
+    }
+    .feedback-days{
+        align-self: flex-end;
+        text-align: end;
+    }
+    .basket__hidden{
+        display: inline;
+    }
+    .basket__lable{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 35px;
+        z-index: -1;
+    }
+    .basket__ico{
+        padding-left: 10px;
+        padding-top: 15px;
+    }
+    .basket__blue{
+        font-size: 13px;
+        color: #0000ff;
+    }
+    .basket__underline{
+        text-decoration: underline;
+        text-decoration-color:#0000ff;
+    }
+    .basket__ico + * {
+        width: 75%;
+    }
+    .basket__p320{
+        display: none;
+    }
+    .basket__p{
+        display: block;
+        font-size: 13px;
+        margin-top: 5px;
     }
 }
 
