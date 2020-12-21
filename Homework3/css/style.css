@@ -109,7 +109,7 @@ a {
 @media (min-width: 750px) {
     .container {
         max-width: 720px;
-        margin: 0 auto;
+        margin: 0 ;
     }
     .cabinet .hidden{
         display: inline;
@@ -135,7 +135,7 @@ a {
         align-self: center;
         flex-wrap: wrap;
         justify-content: space-between;
-       
+        position: relative;
     }
     .contacts__basket *{
         margin-top: 10px;
@@ -183,8 +183,8 @@ a {
     .basket__lable{
         display: block;
         position: absolute;
-        right: 20px;
-        top: 35px;
+        
+        bottom: 5px;
         z-index: -1;
     }
     .basket__ico{
@@ -217,6 +217,8 @@ a {
     .container {
         max-width: 940px;
     }
+
+    
 
 }
 
