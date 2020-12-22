@@ -94,15 +94,16 @@ a {
     flex-wrap: wrap;
     font-size: 13px;
     width: 100%;
+    height: 60px;
 }
 .feedback-number{
     align-self: flex-start;
     flex-grow: 1;
-    width:70%;
+    width:60%;
 }
 .viber-watsapp{
     float: left;
-    margin-top: 0;
+   display: inline;
 }
 .low{
     margin-top: 3px;
@@ -120,38 +121,45 @@ a {
     color:#0000ff;
     text-decoration: underline;
 }
+
 .feedback-days{
     display: none;
 }
 .big-font{
-    font-size: 17px;
+    font-size: 22px;
 }
 
 @media (min-width: 750px) {
     .container {
         max-width: 720px;
         margin: 0 auto;
+        position: relative;
+    }
+    .registration{
+        margin-left: 0;
+        margin-right: 0;
     }
     .cabinet .hidden{
         display: inline;
         margin: 20px;
     }
     .contacts{
+        padding: 0;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: stretch;
     }
     .contacts__homy{
-        flex-grow: 0;
+        flex-grow: 1;
         order: -2;
     }
     .contacts__search{
         align-self: flex-start;
-        padding-top: 10px;
+        margin-right: 20px;
     }
     .contacts__basket{
-        width:30%;
+        width:28%;
         display: flex;
         align-self: flex-start;
         flex-wrap: wrap;
@@ -182,19 +190,30 @@ a {
     }
     .contacts__feedback{
         margin-right: 40px;
-        width:30%;
+        width:350px;
+        height: auto;
         order: -1;
         display: flex;
         flex-direction: column;
         justify-content: stretch;
         align-content:stretch;
+        position: absolute;
+        top: 10px;
+        right: 40%;
+    }
+    .mail{
+        order:1;
     }
     .feedback-number{
         flex-grow: 0;
         align-self: flex-end;
         text-align: end;
+        justify-content:flex-end;
         margin: 2px;
        display: inline;
+    }
+    .thin{
+        width: 40%;
     }
     .feedback-not-number{
         align-self: flex-end;
@@ -208,6 +227,7 @@ a {
     }
     .basket__hidden{
         display: inline;
+        font-size: 11px;
         padding-bottom: 3px;
         margin-left: 8%;
     }
@@ -218,8 +238,9 @@ a {
         z-index: -1;
     }
     .basket__ico{
-        padding-left: 10px;
-        padding-top: 15px;
+        position: absolute;
+        top: 5px;
+        left:15px
     }
     .basket__blue{
         font-size: 13px;
@@ -239,6 +260,7 @@ a {
         display: block;
         font-size: 13px;
         margin-top: 5px;
+        padding-left: 40px;
     }
 }
 
@@ -250,6 +272,9 @@ a {
     .contacts__homy{
         width: 30%;
     }
+    .contacts__basket{
+        width:22%;
+    }
     .contacts__search{
         margin-right: 20px;
     }
@@ -259,21 +284,24 @@ a {
     .hidden-feedback{
         display: block;
         order: -1;
-        position: relative;
+        position: absolute;
         text-align: center;
         justify-content:flex-end;
-        margin-left: 10%;
+        top: 10px;
+        left:25%;
     }
     .hidden-feedback a{
+        font-size: 13px;
         display: inline-block;
         color:#0000ff;
         border-bottom: 1px dotted;
         margin-top: 10px;
         margin-left: 8px;
     }
+   
     .hidden-feedback img{
-        width: 150px;
-        height: 70px;
+        width: 110px;
+        height: 60px;
         display: block;
         position: absolute;
         z-index: -1;
@@ -285,14 +313,20 @@ a {
     .container {
         max-width: 1140px;
     }
+    .contacts__basket{
+        width:18%;
+    }
     .hidden-feedback{
         margin-left:5%;
     }
     .hidden-feedback a{
         margin-left:20px;
     }
+    .hidden-feedback{
+        left:16%;
+    }
     .contacts__feedback{
-        margin-right: 60px;
+        right: 50%;
     }
     .img-search{
         display: none;
@@ -333,7 +367,7 @@ a {
     .searc__form *{
         border: 0;
     }
-    .basket__underline{
+    .u{
         border-bottom: 1px dotted; 
     }
 
