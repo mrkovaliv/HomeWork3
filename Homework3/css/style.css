@@ -11,6 +11,7 @@ a {
 
 .registration{
     margin: 20px;
+    margin-top: 0;
     display: flex;
     justify-content: space-between;
     font-size: 13px;
@@ -34,7 +35,7 @@ a {
 }
 
 .contacts{
-    margin: 20px;
+   padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -89,6 +90,7 @@ a {
 .contacts__feedback{
     display: flex;
     justify-content: space-between;
+    align-content: space-between;
     flex-wrap: wrap;
     font-size: 13px;
     width: 100%;
@@ -98,7 +100,19 @@ a {
     flex-grow: 1;
     width:70%;
 }
+.viber-watsapp{
+    float: left;
+    margin-top: 0;
+}
+.low{
+    margin-top: 3px;
+}
+.feedback-not-number svg{
+    float: left;
+   
+}
 .feedback-not-number{
+    margin-top: 10px;
     align-self: flex-end;
     text-align: end;
 }
@@ -116,7 +130,7 @@ a {
 @media (min-width: 750px) {
     .container {
         max-width: 720px;
-        margin: 0 ;
+        margin: 0 auto;
     }
     .cabinet .hidden{
         display: inline;
@@ -133,17 +147,19 @@ a {
         order: -2;
     }
     .contacts__search{
-        align-self: center;
+        align-self: flex-start;
+        padding-top: 10px;
     }
     .contacts__basket{
         width:30%;
         display: flex;
-        align-self: center;
+        align-self: flex-start;
         flex-wrap: wrap;
         position: relative;
+        margin: 0;
     }
     .contacts__basket *{
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .contacts .hidden{
         margin-top: 10px;
@@ -161,35 +177,44 @@ a {
     }
     .feedback-days{
         display: inline;
-        align-self: flex-start;
         text-align: end;
+        margin: 0;
     }
     .contacts__feedback{
+        margin-right: 40px;
         width:30%;
         order: -1;
         display: flex;
         flex-direction: column;
+        justify-content: stretch;
+        align-content:stretch;
     }
     .feedback-number{
+        flex-grow: 0;
         align-self: flex-end;
         text-align: end;
+        margin: 2px;
+       display: inline;
     }
     .feedback-not-number{
         align-self: flex-end;
         text-align: end;
+        margin: 2px;
     }
     .feedback-days{
         align-self: flex-end;
         text-align: end;
+        margin: 2px;
     }
     .basket__hidden{
         display: inline;
+        padding-bottom: 3px;
         margin-left: 8%;
     }
     .basket__lable{
         display: block;
         position: absolute;
-        bottom: 5px;
+        bottom: 1px;
         z-index: -1;
     }
     .basket__ico{
@@ -226,10 +251,10 @@ a {
         width: 30%;
     }
     .contacts__search{
-        margin-right: 40px;
+        margin-right: 20px;
     }
     .contacts__feedback{
-        margin-right: 40px;
+        margin-right: 30px;
     }
     .hidden-feedback{
         display: block;
@@ -244,6 +269,7 @@ a {
         color:#0000ff;
         border-bottom: 1px dotted;
         margin-top: 10px;
+        margin-left: 8px;
     }
     .hidden-feedback img{
         width: 150px;
@@ -261,6 +287,9 @@ a {
     }
     .hidden-feedback{
         margin-left:5%;
+    }
+    .hidden-feedback a{
+        margin-left:20px;
     }
     .contacts__feedback{
         margin-right: 60px;
@@ -303,6 +332,9 @@ a {
     }
     .searc__form *{
         border: 0;
+    }
+    .basket__underline{
+        border-bottom: 1px dotted; 
     }
 
 }
