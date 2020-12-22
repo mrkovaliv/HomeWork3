@@ -3,12 +3,15 @@ body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    color:#040d0d;
 }
 a {
     text-decoration: none;
     
 }
-
+.orange{
+    color: #ff5816;
+}
 .registration{
     margin: 20px;
     margin-top: 0;
@@ -83,6 +86,7 @@ a {
     background-color: #d9dde6;
     border-radius: 15px;
     text-align: center;
+    color: #f3985d;
 }
 .basket__lable{
     display: none;
@@ -315,6 +319,7 @@ a {
     }
     .contacts__basket{
         width:18%;
+        top:35px;
     }
     .hidden-feedback{
         margin-left:5%;
@@ -322,11 +327,16 @@ a {
     .hidden-feedback a{
         margin-left:20px;
     }
+    .contacts__homy{
+        margin-top:25px;
+    }
     .hidden-feedback{
         left:16%;
+        top:45px;
     }
     .contacts__feedback{
         right: 50%;
+        top:45px;
     }
     .img-search{
         display: none;
