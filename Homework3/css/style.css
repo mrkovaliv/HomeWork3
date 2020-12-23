@@ -9,6 +9,45 @@ a {
     text-decoration: none;
     
 }
+.title-link {
+    display: none;
+}
+.title-arrow {
+    margin-left: 20px;
+    display: flex;
+    align-items: center; 
+}
+.title-arrow .title-arrow--hover {
+    display: none;
+}
+.title-arrow:hover .title-arrow--static{
+    display: none;
+}
+.title-arrow:hover .title-arrow--hover{
+    display: block;
+}
+.arrow-prev {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.arrow-prev,
+.arrow-next{
+    border-radius: 50%;
+    border: 3px solid #dbdee6;
+    padding: 5px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.arrow-prev .no-mobile,
+.arrow-next .no-mobile{
+    display: none;
+}
+.arrow-prev:hover,
+.arrow-next:hover{
+    border: 3px solid #ff6629;
+}
 .orange{
     color: #ff5816;
 }
@@ -392,11 +431,14 @@ a {
         align-items:center;
         margin-top: 50px;
     }
+    .brend{
+        width: 20%;
+    }
     .brends__blocks .hidden{
         display: none;
     }
-    .brend{
-        width: 20%;
+    .brends__blocks .hidden980{
+        display: none;
     }
 
 
@@ -496,6 +538,14 @@ a {
     .blocks .hidden{
         display: block;
     }
+
+    .brend{
+        width: 13%;
+    }
+    .brends__blocks .hidden{
+        display: block;
+    }
+    
 }
 
 @media (min-width: 1140px) {
@@ -566,10 +616,48 @@ a {
         border-bottom: 1px dotted; 
     }
 
+    .arrow-prev {
+        margin-right: 0;
+        left: 0;
+    }
+    .arrow-next{
+        right: 0;
+    }
+    .title-link{
+        display: inline-block;
+        color: #4673ab;
+        text-decoration: underline;
+        font-size: 13px;
+        line-height: 20px;
+        white-space: nowrap;
+        margin-left: 10px;
+    }
+    .arrow-prev .mobile,
+    .arrow-next .mobile,
+    .title-arrow{
+        display: none;
+    }
+    .arrow-prev .no-mobile,
+    .arrow-next .no-mobile{
+        display: none;
+    }
+    .arrow-prev,
+    .arrow-next{
+        position: absolute;
+        border: none;
+        padding: 0;
+        top: 50%;
+    }
+    .arrow-prev:hover,
+    .arrow-next:hover{
+        border: none;
+    }
 
-
-
-
-
+    .brend{
+        width: 10%;
+    }
+    .brends__blocks .hidden980{
+        display: block;
+    }
 
 }
