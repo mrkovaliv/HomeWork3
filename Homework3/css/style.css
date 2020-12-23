@@ -147,6 +147,13 @@ a {
     display: none;
 }
 
+.brends{
+    display: none;
+}
+
+.strong-habbits{
+    display: none;
+}
 
 
 @media (min-width: 750px) {
@@ -326,7 +333,16 @@ a {
     }
 
 
-
+    .H2{
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    .line{
+        background-color: #dbdee6;
+        height: 2px;
+        flex-grow: 1;
+        margin-left: 20px;
+    }
 
 
 
@@ -334,23 +350,16 @@ a {
         display:flex;
         align-items:center;
         flex-wrap: wrap;
+        margin-bottom: 50px;
     }
-    .what-by-now h2{
-        font-size: 22px;
-        text-transform: uppercase;
-    }
-    .what-by-now .line{
-        background-color: #dbdee6;
-        height: 1px;
-        flex-grow: 1;
-        margin-left: 20px;
-    }
+    
     .blocks{
         width: 100%;
         display:flex;
         justify-content:space-between;
         align-items:baseline;
         margin-top: 30px;
+        
     }
     .blocks .hidden{
         display: none;
@@ -367,7 +376,72 @@ a {
         text-decoration: underline;
         text-decoration-color: #a2b9d5;
     }
-      
+
+
+
+    .brends{
+        display:flex;
+        align-items:center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    .brends__blocks{
+        width: 100%;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-top: 50px;
+    }
+    .brends__blocks .hidden{
+        display: none;
+    }
+    .brend{
+        width: 20%;
+    }
+
+
+    .strong-habbits{
+        display: flex;
+        align-items:center;
+        flex-wrap: wrap;
+        background-color:#dbdee6;
+        padding: 40px 15px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+    }
+    .strong-habbits .line{
+        background-color: #ffffff;
+    }
+    .habbits{
+        width: 100%;
+        display:flex;
+        justify-content:space-around;
+        align-items:baseline;
+        margin-top: 30px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .habbit{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .habbit p{
+        margin-top: 15px;
+    }
+    .habbit-ico{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        margin: 0 25%;
+    }
+    
+    
 }
 
 
