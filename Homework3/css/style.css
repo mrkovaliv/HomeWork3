@@ -9,6 +9,9 @@ a {
     text-decoration: none;
     
 }
+.reasons{
+    display: none;
+}
 .title-link {
     display: none;
 }
@@ -154,7 +157,6 @@ a {
 }
 .feedback-not-number svg{
     float: left;
-   
 }
 .feedback-not-number{
     margin-top: 10px;
@@ -191,6 +193,10 @@ a {
 }
 
 .strong-habbits{
+    display: none;
+}
+
+.in-numbers{
     display: none;
 }
 
@@ -482,7 +488,135 @@ a {
         border-radius: 50%;
         margin: 0 25%;
     }
+
+    .in-numbers{
+        display: flex;
+        align-items:center;
+        flex-wrap: wrap;
+        padding: 40px 15px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+    }
+    .numbers__blocks{
+        width: 100%;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        margin-top: 30px;
+        font-size: 12px;
+    }
+    .numbers__text{
+        width: 100%;
+        display:flex;
+        justify-content:space-around;
+        align-items:baseline;
+        margin-top: 30px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color:#040d0d;
+        text-align: center;
+    }
+    .numbers__text p{
+        width: 130px;
+    }
+
+
+    .numbers__blocks .hidden{
+        display: none;
+    }
+    .numbers__text .hidden{
+        display: none;
+    }
+    .number{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 130px;
+        height: 130px;
+        border: 3px solid #dbdee6;
+        border-radius: 50%;
+        font-size: 80px;
+        color: #394a5c;
+    }
+    .number:nth-child(odd){
+        color:#ff5816;
+    }
+    .division{
+        font-size: 54px;
+    }
+    .multiple{
+
+        font-size: 19px;
+        text-align: center;
+    }
+
+
+    .reasons{
+        display:flex;
+        align-items:center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    .reasons_columns{
+        width: 100%;
+        display:flex;
+        justify-content:space-between;
+        align-items:baseline;
+    }
+    .reason{
+        width: 49%;
+        margin-top: 40px;
+        height: 730px;
+    }
+    .reason svg{
+        float: left;
+        margin: 25px;
+    }
+    .reason h2{
+        font-size: 15px;
+        text-transform: uppercase;
+        padding-top: 25px;
+        height: 90px;
+        border-radius: 10px 10px 0 0;
+        line-height: 20px;
+        color: #ffffff;
+    }
     
+    .red {
+        
+        border: 3px solid #f6bdbf;
+        border-radius: 20px;
+        
+    }
+    .green{
+        border: 3px solid #9bd1a6;
+        border-radius: 20px;
+    }
+    .red h2{
+        background-color: #cb0b13;
+    }
+    .green h2{
+        background-color: #16a333;
+    }
+    .red ul{
+        padding: 20px  30px 40px 50px;
+    }
+    .green ul{
+        padding: 20px  30px 40px 50px;
+    }
+    .red li {
+        color:#cb0b13;
+        margin-top:10px;
+        line-height: 1.8;
+    }
+    .green li {
+         color:#16a333;
+         margin-top:10px;
+         line-height: 1.8;
+    }
+    li span {
+        color:#040d0d;
+    }
     
 }
 
@@ -530,6 +664,18 @@ a {
        margin-bottom: 10 px;
     }
 
+    .reason{
+        height: 600px;
+    }
+    .reason h2{
+        font-size: 15px;
+        text-transform: uppercase;
+        padding-top: 25px;
+        height: 80px;
+        border-radius: 10px 10px 0 0;
+        line-height: 20px;
+        color: #ffffff;
+    }
 
     .block{
         width: 20%;
@@ -544,6 +690,32 @@ a {
     }
     .brends__blocks .hidden{
         display: block;
+    }
+
+    .numbers__blocks .hidden{
+        display: flex;
+    }
+    .numbers__text .hidden{
+        display: flex;
+    }
+
+    .in-num {
+        margin-right: 0;
+        left: 0;
+        right: 0;
+        display: inline-block;
+        color: #4673ab;
+        text-decoration: underline;
+        font-size: 13px;
+        line-height: 20px;
+        white-space: nowrap;
+        margin-left: 10px;
+        display: none;
+        position: absolute;
+        border: none;
+        padding: 0;
+        top: 50%;
+        border: none;
     }
     
 }
