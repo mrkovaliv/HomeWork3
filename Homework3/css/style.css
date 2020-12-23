@@ -44,6 +44,7 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 .hidden-feedback{
     display: none;
@@ -132,6 +133,21 @@ a {
 .big-font{
     font-size: 22px;
 }
+
+
+
+
+.news{
+    display: none;
+}
+
+
+
+.what-by-now{
+    display: none;
+}
+
+
 
 @media (min-width: 750px) {
     .container {
@@ -266,6 +282,92 @@ a {
         margin-top: 5px;
         padding-left: 40px;
     }
+
+
+
+
+
+    
+      
+    .news{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    .news_1{
+        width: 30%;
+        background-color: aquamarine;
+        height: 100px;
+    }
+    .news_2{
+        width: 66%;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .grey-ad{
+        font-size: 9px;
+        text-transform: uppercase;
+        background-color: #e3e5eb;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .grey-ad a{
+        color: #4673ab;
+    }
+    .slider{
+        margin-top: 30px;
+        background-image: url(../images/cam.png);
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 250px;
+    }
+
+
+
+
+
+
+    .what-by-now{
+        display:flex;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+    .what-by-now h2{
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    .what-by-now .line{
+        background-color: #dbdee6;
+        height: 1px;
+        flex-grow: 1;
+        margin-left: 20px;
+    }
+    .blocks{
+        width: 100%;
+        display:flex;
+        justify-content:space-between;
+        align-items:baseline;
+        margin-top: 30px;
+    }
+    .blocks .hidden{
+        display: none;
+    }
+    .block{
+        width: 30%;
+    }
+    .block p{
+        margin-top: 40px;
+    }
+    .block a{
+        color:#4673ab;
+        font-size: 16px;
+        text-decoration: underline;
+        text-decoration-color: #a2b9d5;
+    }
+      
 }
 
 
@@ -310,6 +412,15 @@ a {
         position: absolute;
         z-index: -1;
        margin-bottom: 10 px;
+    }
+
+
+    .block{
+        width: 20%;
+    }
+    
+    .blocks .hidden{
+        display: block;
     }
 }
 
@@ -380,5 +491,11 @@ a {
     .u{
         border-bottom: 1px dotted; 
     }
+
+
+
+
+
+
 
 }
