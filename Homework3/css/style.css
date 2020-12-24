@@ -200,6 +200,10 @@ a {
     display: none;
 }
 
+.many-text{
+    display: none;
+}
+
 
 @media (min-width: 750px) {
     .container {
@@ -489,6 +493,25 @@ a {
         margin: 0 25%;
     }
 
+
+    .many-text{
+        display: flex;
+        justify-content:space-between;
+        margin-bottom: 50px;
+    }
+    .some-text{
+        width: 47%;
+        font-size: 15px;
+    }
+    .some-text a{
+        text-decoration: underline;
+        color: #ff5816;
+    }
+    .some-text .hidden{
+       display: none;
+    }
+
+
     .in-numbers{
         display: flex;
         align-items:center;
@@ -718,6 +741,9 @@ a {
         border: none;
     }
     
+    .some-text .hidden{
+        display: inline;
+     }
 }
 
 @media (min-width: 1140px) {
