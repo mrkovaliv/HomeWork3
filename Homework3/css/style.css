@@ -605,7 +605,6 @@ a {
         font-size: 54px;
     }
     .multiple{
-
         font-size: 19px;
         text-align: center;
     }
@@ -621,7 +620,6 @@ a {
         width: 100%;
         display:flex;
         justify-content:space-between;
-        
     }
     .reason{
         width: 49%;
@@ -652,7 +650,6 @@ a {
         display: flex;
         align-items:center;
         justify-content:space-around;
-       
         border-radius: 10px 10px 0 0;
     }
     .red-top{
@@ -741,19 +738,7 @@ a {
        margin-bottom: 10 px;
     }
 
-    .reason{
-        height: 600px;
-    }
-    .reason h2{
-        font-size: 15px;
-        text-transform: uppercase;
-        padding-top: 25px;
-        height: 80px;
-        border-radius: 10px 10px 0 0;
-        line-height: 20px;
-        color: #ffffff;
-    }
-
+    
     .block{
         width: 20%;
     }
