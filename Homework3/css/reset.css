@@ -27,7 +27,7 @@ body {
     line-height:1;
 }
 
-nav ul {
+ul {
     list-style:none;
 }
 
@@ -38,8 +38,3 @@ a {
     vertical-align:baseline;
     background:transparent;
 }
-
-
-
-
-
