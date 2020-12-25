@@ -885,7 +885,7 @@ button {
     }
     .new__inner,
     .recomendation__inner,
-    .sale-product__inner
+    .sale-product__inner,
     .action__inner {
         position: relative;
     }
