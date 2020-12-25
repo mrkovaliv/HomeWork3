@@ -184,6 +184,7 @@ a {
     width:34%;
     margin: auto;
     margin-top: 15px;
+    line-height: 18px;
 }
 .how-work__button button{
     font-size: 15px;
@@ -456,6 +457,7 @@ a {
     }
     .block{
         width: 30%;
+        line-height: 22px;
     }
     .block p{
         margin-top: 40px;
@@ -507,7 +509,6 @@ a {
         width: 100%;
         display:flex;
         justify-content:space-around;
-        align-items:baseline;
         margin-top: 30px;
         font-size: 12px;
         text-transform: uppercase;
@@ -517,6 +518,8 @@ a {
         display: flex;
         flex-direction: column;
         text-align: center;
+        align-items:center;
+        line-height: 18px;
     }
     .habbit p{
         margin-top: 15px;
@@ -536,6 +539,7 @@ a {
     .many-text{
         display: flex;
         justify-content:space-between;
+        line-height: 22px;
         margin-bottom: 50px;
     }
     .some-text{
@@ -567,6 +571,7 @@ a {
         align-items:center;
         margin-top: 30px;
         font-size: 12px;
+        line-height: 18px;
     }
     .numbers__text{
         text-transform: uppercase;
@@ -616,57 +621,60 @@ a {
         width: 100%;
         display:flex;
         justify-content:space-between;
-        align-items:baseline;
+        
     }
     .reason{
         width: 49%;
         margin-top: 40px;
     }
-    .reason svg{
-        float: left;
-        margin: 25px;
+    .reason-ico{
+        margin-left: 10px;
     }
     .reason h2{
         font-size: 15px;
         text-transform: uppercase;
-        padding-top: 25px;
-        height: 90px;
-        border-radius: 10px 10px 0 0;
+        margin: 10px;
         line-height: 20px;
         color: #ffffff;
     }
     
-    .red {
-        
+    .red { 
         border: 3px solid #f6bdbf;
         border-radius: 10px;
-        
     }
     .green{
         border: 3px solid #9bd1a6;
         border-radius: 10px;
     }
-    .red h2{
+    .red-top,
+    .green-top{
+        min-height: 100px;
+        display: flex;
+        align-items:center;
+        justify-content:space-around;
+       
+        border-radius: 10px 10px 0 0;
+    }
+    .red-top{
         background-color: #cb0b13;
     }
-    .green h2{
+    .green-top{
         background-color: #16a333;
     }
-    .red ul{
-        padding: 20px  30px 40px 50px;
-    }
+    
+    .red ul,
     .green ul{
-        padding: 20px  30px 40px 50px;
+        padding: 20px  10px 25px 25px;
     }
     .red li {
         color:#cb0b13;
         margin-top:10px;
-        line-height: 1.8;
+        line-height: 20px;
     }
     .green li {
          color:#16a333;
          margin-top:10px;
-         line-height: 1.8;
+         line-height: 20px;
     }
     li span {
         color:#040d0d;
