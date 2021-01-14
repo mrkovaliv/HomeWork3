@@ -314,6 +314,7 @@ button {
 }
 .slider__item:hover{
     border: 1px solid #ff5e1e;
+    cursor: pointer;
 }
 .slider__item-img{
     margin-bottom: 30px;
@@ -345,7 +346,6 @@ button {
     height: 162px;
 }
 .action-item .slider__item-img img{
-    height: 123px;
     width: 100%;
 }
 .slider__item-img {
@@ -806,6 +806,8 @@ button {
     }
     .news__list {
         margin-bottom: 15px;
+        max-height: 385px;
+        overflow: hidden;
     }
     .news__list-right {
         margin-left: 10px;
@@ -1317,6 +1319,9 @@ button {
         width: 30%;
         line-height: 22px;
     }
+    .block{
+        cursor: pointer;
+    }
     .block p{
         margin-top: 40px;
     }
@@ -1591,10 +1596,7 @@ button {
     .info-contacts__email{
         display: inline;
     }
-    .info-contacts__feedback{
-        bottom: -20px;
-        left: -204px;
-    }
+    
     .info-about__logo{
         margin-bottom: 25px;
     }
@@ -1618,6 +1620,11 @@ button {
         position: absolute;
         left: -130px;
         top: 0;
+    }
+    .footer-feedback{
+        bottom: -20px;
+        left: -204px;
+        top: auto;
     }
     .info-contacts__feedback-link {
         display: inline-block;
@@ -1703,7 +1710,7 @@ button {
 
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1140px) {
     .container {
         max-width: 1140px;
     }
@@ -1922,7 +1929,9 @@ button {
     .info-contacts__skype-box{
         display: none;
     }
-    .info-contacts__feedback{
+    .info-contacts__feedback,
+    .footer-feedback{
+        bottom: auto;
         top: 2px;
         left: -127px;
     }
