@@ -1492,6 +1492,7 @@ button {
     .reason{
         width: 49%;
         margin-top: 40px;
+        height: 1%;
     }
     .reason-ico{
         margin-left: 10px;
